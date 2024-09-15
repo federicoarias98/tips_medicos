@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css" type="text/css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script type="text/javascript" src=""></script>
+  <link rel="shortcut icon" href="images/shortcut.svg" type="image/x-icon" />
 
 </head>
 
@@ -18,16 +19,15 @@
   <section "temporizador_1">
 
     <div class="grid grid-cols-3  bg-[#0a2777] ">
-      <div class="text-white content-center mx-auto text-4xl font-semibold">67 % DE DESCUENTO</div>
-      <div class="font-semibold content-center mx-auto text-[#efee7b] text-4xl" id="timer">24:00:00
-      </div>
-      <script src="app.js"></script>
+      <div class="text-white text-center pt-5 mx-auto sm:text-xs md:text-4xl font-semibold">67 % DE DESCUENTO</div>
+      <div class="font-semibold content-center mx-auto text-[#efee7b] sm:text-md md:text-4xl font-semibold" id="timer1">
+        24:00:00</div>
       <div class="py-6 flex items-center justify-center">
         <button type="button"
-          class="text-white bg-green-600 hover:bg-green-800 focus:outline-none focus:ring-[#24292F]/50 rounded-lg px-4 py-2 text-center inline-flex items-center dark:focus:ring-green-500 dark:hover:bg-green-800"
+          class="sm:text-xs md:text-xl font-semibold text-white bg-green-600 hover:bg-green-800 focus:outline-none focus:ring-[#24292F]/50 rounded-lg px-5 py-2 text-center inline-flex items-center dark:focus:ring-green-500 dark:hover:bg-green-800"
           onclick="window.open('https://pay.hotmart.com/C73313606S?sck=HOTMART_PRODUCT_PAGE&off=vbwrotdh&hotfeature=32,34&_gl=1*1s0ny0o*_gcl_au*ODA0ODQ2OTguMTcyNjQyMDMwMQ..*_ga*MjA5MzE2MjU3NC4xNzI2NDIwMjk5*_ga_GQH2V1F11Q*MTcyNjQyMDI5Ny4xLjEuMTcyNjQyMDMwOC40OS4wLjA.&bid=1726420313592', '_blank')">
-          <img src="images/icons8-buy-30.png" class="pr-3" alt="">
-          CÓMPRALO ACÁ
+          <img src="images/icons8-buy-30.png" class="pr-3 hidden md:block" alt="">
+          COMPRAR
         </button>
       </div>
     </div>
@@ -41,10 +41,10 @@
     </div>
   </section>
 
-  <section "video" class="back">
-    <div class="w-full">
-      <iframe class="mx-auto pt-8 " width="789" height="515"
-        src="https://www.youtube.com/embed/kj6W2RNGA7c?si=q7uMugdxxOkJY6cN" title="YouTube video player" frameborder="0"
+  <section "video">
+    <div class="aspect-video p-8">
+      <iframe class="w-full h-full" src="https://www.youtube.com/embed/kj6W2RNGA7c?si=aEiBJmC_p6NCNxdt"
+        title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
@@ -77,24 +77,14 @@
   </section>
 
   <section "temporizador_2">
-    <div class="cont-temporizador">
-      <div class="bloque">
-        <div class="horas" id="horas">--</div>
 
+    <div class="bg-cover w-full" style="background-image: url('images/banner_parallax.jpg'); height: 200px">
+      <div class="text-[#335422] text-center pt-7 sm:text-md md:text-4xl font-bold">DESCUENTO DISPONIBLE SOLO POR HOY
       </div>
-
-      <div class="bloque">
-        <div class="minutos" id="minutos">--</div>
-
-      </div>
-
-      <div class="bloque">
-        <div class="segundos" id="segundos">--</div>
-
-      </div>
-
+      <div class="font-bold text-center pt-7 text-white text-6xl" id="timer2">24:00:00</div>
+      <script src="app.js"></script>
     </div>
-    <script src="app.js"></script>
+
   </section>
 
   <section "oferta_2">
@@ -154,7 +144,7 @@
     <img src="images/banner_9.jpg" alt="">
   </section>
 
-
+  <script src="app.js"></script>
 </body>
 
 </html>

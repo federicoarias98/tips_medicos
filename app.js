@@ -18,7 +18,13 @@ function startTimer(duration, display) {
 }
 
 window.onload = function () {
-    const duration = 24 * 60 * 60; // 24 horas en segundos
-    const display = document.getElementById('timer');
-    startTimer(duration, display);
+    const duration1 = 24 * 60 * 60; // 24 horas en segundos para el primer temporizador
+    const duration2 = 24 * 60 * 60; // 24 horas en segundos para el segundo temporizador
+
+    const display1 = document.getElementById('timer1');
+    const display2 = document.getElementById('timer2');
+
+    // Inicia ambos temporizadores simultáneamente
+    startTimer(duration1, display1);
+    startTimer(duration2, display2);
 };
