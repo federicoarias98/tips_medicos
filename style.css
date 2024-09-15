@@ -1,19 +1,9 @@
-
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
 body{
+
   background-color: #ebebeb;
-  
-   
+
 }
 
-header{
-  padding: 40px;
-}
 
 .cont-temporizador{
   text-align: center;
@@ -52,18 +42,6 @@ header{
   color: #dedede;
 }
 
-.banner_1{
-  padding-right: 40px;
-}
-
-.oferta{
- margin: auto;
-  width: 640px; 
-  padding: 50px;
-  font-family: 'Arial', sans-serif; 
-  color: #33475b;  
-  padding: 40px;
-}
 
 @media  screen and (max-width: 1700px){
   .banner_1
